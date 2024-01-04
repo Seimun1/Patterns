@@ -53,6 +53,6 @@ class DeliveryTest {
         $("[data-test-id='success-notification']")
                 .shouldHave(exactText("Встреча успешно запланирована на  " + secondMeetingDate))
                 .shouldBe(visible);
-    }vv
+    }
 }
 
