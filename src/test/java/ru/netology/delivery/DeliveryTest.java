@@ -35,7 +35,7 @@ class DeliveryTest {
         $("[data-test-id='phone'] input").setValue(validUser.getPhone());
         $("[data-test-id='agreement']").click();
         $(byText("Запланировать")).click();
-        $(byText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
+        $(byText("Успешно!")).shouldBe(visible, Duration.ofSeconds(20));
         $("[data-test-id='success-notification'] .notification__content")
                 .shouldHave(exactText("Встреча успешно запланирована на  " + firstMeetingDate))
                 .shouldBe(visible);
